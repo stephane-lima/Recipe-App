@@ -96,7 +96,7 @@
   --section-gap: 32px;
 }
 
-@media(prefers-reduced-notion: no-preference) {
+@media(prefers-reduced-motion: no-preference) {
   :root {
 
     /* Transition */
