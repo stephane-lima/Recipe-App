@@ -195,7 +195,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-block: calc(var(--header-height) + 16px) var(--mobile-nav-height);
-  opacity: 8;
+  opacity: 1;
   animation: fade 300ms var(--transition-timing-function) forwards;
 }
 
@@ -453,8 +453,8 @@ main { flex-grow: 1; }
 }
 
 @keyframes skeleton-loading {
-  0% { opacity: 0.2 };
-  100% { opacity: 0.4 };
+  0% { opacity: 0.2; }
+  100% { opacity: 0.4; }
 }
 
 .skeleton-card .card-banner {
@@ -866,48 +866,6 @@ main { flex-grow: 1; }
 .tab .btn-secondary {
   max-width: 100%;
   margin-block-start: 12px;
-}
-
-/*-----------------------------------*\
-  #RECIPE SLIDER
-\*-----------------------------------*/
-
-.slider {
-  --gap: 8px;
-  position: relative;
-  overflow-x: auto;
-  scroll-snap-type: inline mandatory;
-  padding-block-end: 5px;
-}
-
-.slider::-webkit-scrollbar { height: 4px; }
-
-.slider::-webkit-scrollbar-thumb { background-color: transparent; }
-
-.slider:where(:hover, :focus-within)::-webkit-scrollbar-thumb {
-  background-color: var(--alpha-10);
-}
-
-.slider-wrapper {
-  display: flex;
-  align-items: stretch;
-  gap: var(--gap);
-  transition: var(--transition-medium);
-}
-
-.slider-item {
-  min-width: calc(50% - 4px);
-  scroll-snap-align: start;
-}
-
-.load-more-card {
-  height: 100%;
-  background-color: var(--primary-container);
-  border-radius: 1px solid var(--radius-4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
 }
 
 /*-----------------------------------*\
