@@ -1,13 +1,4 @@
-/**
- * @license MIT
- * @copyright 2023 codewithsadee
- * @author codewithsadee <mohammadsadee24@gmail.com>
- */
-
-"use strict";
-
 /* Import */
-
 import { getTime } from "./module.js";
 
 const savedRecipes = Object.keys(window.localStorage).filter(item => {
@@ -38,7 +29,7 @@ if (savedRecipes.length) {
 
         // console.log(JSON.parse(window.localStorage.getItem(savedRecipe)));
 
-        const recipeId = uri.slice(uri.lastIndexOf("_") + i);
+        const recipeId = uri.slice(uri.lastIndexOf("_") + 1);
         const /* {Undefined || String} */ isSaved = window.localStorage.getItem(`cookio-recipe${recipeId}`);
 
         const card = document.createElement("div");

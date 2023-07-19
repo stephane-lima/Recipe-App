@@ -1,11 +1,3 @@
-/**
- * @license MIT
- * @copyright 2023 codewithsadee
- * @author codewithsadee <mohammadsadee24@gmail.com>
- */
-
-"use strict";
-
 window.ACCESS_POINT = "https://api.edamam.com/api/recipes/v2";
 
 const APP_ID = "3f839d34";

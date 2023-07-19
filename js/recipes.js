@@ -1,11 +1,3 @@
-/**
- * @license MIT
- * @copyright 2023 codewithsadee
- * @author codewithsadee <mohammadsadee24@gmail.com>
- */
-
-"use strict";
-
 /* Import */
 
 import { fetchData } from "./api.js";
@@ -15,10 +7,6 @@ import { getTime } from "./module.js";
 /* Accordion */
 
 const accordions = document.querySelectorAll("[data-accordion]");
-
-/**
- * @param {NodeList} element Accordion node
- */
 
 const initAccordion = function (element) {
 
@@ -230,3 +218,11 @@ window.addEventListener("scroll", async e => {
     }
 
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("myForm").addEventListener("submit", handleForm);
+});
+
+function handleForm(ev) {
+    ev.preventDefault();
+}
